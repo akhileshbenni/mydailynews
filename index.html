@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Document</title>
+    <style>
+  div {
+   background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    border-left: 5px solid #007bff; /* Adds a nice blue accent line */
+  }
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+  }
+        div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+        h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+        pre {
+    white-space: pre-wrap; /* Fixes long text from stretching the page */
+    font-family: inherit;
+  }
+</style>
 </head>
 <body>
     <center>
-        <h1>
+        <h1 style="color:blue;">
             My Daily News
         </h1>
     </center>
     <hr>
-    <div>
-        <h3>Breaking News Taaza Khabar</h3>
+    <div style="shadow">
+        <h3 style="color:red;">Breaking News Taaza Khabar</h3>
         <p>Technology is growing Students are learning Html Css and javascript</p>
     </div>
     <hr>
     <div>
-        <h3>Today's Highlight</h3>
+        <h3 style="color:pink;">Today's Highlight</h3>
         <p>Water formula is H<sub>2</sub>O </p>
 
         <p>this is small txt</p>
@@ -27,13 +59,13 @@
     </div>
     <hr>
     <div>
-        <h3>Weather Report</h3>
+        <h3 style="color:aqua;">Weather Report</h3>
         <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde voluptas alias laboriosam, velit fuga, consectetur repellendus doloremque, voluptatibus delectus excepturi et eveniet. Distinctio magnam quisquam vitae error a sint praesentium fugit quia magni ab laborum, commodi nostrum corporis blanditiis dolores enim eum aliquid quasi reiciendis et reprehenderit aperiam fugiat.</pre>
     </div>
     <hr>
     <div>
-        <h3>Read More</h3>
-        <a href="https://www.google.com">Google</a>
+        <h3 style="color:yellow;">Read More</h3>
+        <a href="https://www.google.com" target="_blank">Google</a>
     </div>
 </body>
 </html>
